@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> Wonder Fox Website</title>
+    <link rel="icon" href="assets/fox-logo.ico">
+    <style>
+      body{
+        margin: 0px;
+      }
+      #header{
+        background: #000;
+      }
+
+      #header ul{
+        color: #fff;
+        display: inline;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      #header ul li{
+        display: inline-block;
+      }
+
+      #daftar{
+        position: absolute;
+        right: 0px;
+      }
+      
+      .wrapper{
+        position: relative;
+        max-width: 1024px;
+        margin: 0 auto;
+      }
+
+      #titleVideo, .centerVertically{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      div#titleVideo {
+          width: 100%;
+          background: #ddd5d5b8;
+          padding-top: 35px;
+          padding-bottom: 35px;
+      }
+
+      #partner{
+        padding: 15px 0px; 
+      }
+      .imgPartner{
+        height: 36px;
+      }
+
+      #article .wrapper{
+        display: table;
+      }
+      .floatLeft{
+        float: left;
+        width: 48%;
+        padding: 1%;
+      }
+      .floatRight{
+        float: right;
+        width: 48%;
+        padding: 1%;
+      }
+
+      form{
+        padding: 15px 0px;
+      }
+
+      .blocking{
+        display: block;
+        padding: 15px 0px;
+      }
+    </style>
+    <link rel="stylesheet" href="assets/style.css">
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="wrapper" >
+        <img src="assets/fox-logo.png" alt="fox-logo" style="height: 52px"/>
+        <ul class="centervertically">
+          <li>About</li>
+          <li>Location</li>
+          <li>Contact</li>
+        </ul>
+        <button id="daftar" class="centerVertically"> Daftar Sekarang </button>
+      </div>
+    </div>
+    <div id="videoArea">
+      <div class="wrapper">
+        <video style="width: 100%" autoplay muted>
+          <source src="assets/video.mp4" type="video/mp4">
+        </video>
+        <div id="titleVideo">
+          <center>
+            <h1>
+                Menjadi fullstack web developer dalam 12 minggu
+            </h1>
+            <h3>
+                Kelas Pemrograman Full Stack JavaScript Web Developer di Jakarta, Indonesia
+            </h3>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div id="partner">
+      <center>
+          <img class="imgPartner" src='assets/partner1.png'/>
+          <img class="imgPartner" src='assets/partner2.png'/>
+          <img class="imgPartner" src='assets/partner3.png'/>
+          <img class="imgPartner" src='assets/partner4.png'/>
+      </center>
+    </div>
+
+    <div id="article">
+      <div class="wrapper">
+          <img class="floatLeft" src="assets/home_banner_upper--md5--7f091ceb9b0fd04b706820e565a11865.jpg"/>
+          <div class="floatRight">
+              <p>
+                  <h3>HACKTIV8 Coding Bootcamp</h3>
+                  HACKTIV8 adalah program pembelajaran Full Stack JavaScript immersive pertama di Indonesia. Kurikulum kami dirancang untuk membangun keahlian yang dapat diaplikasikan pada perkembangan dunia teknologi terkini.
+              </p>
+              <a href="https://hacktiv8.com/fullstack/silabus/">Lihat Silabus</a>
+          </div>
+      </div>  
+    </div>
+
+    <div id="maps">
+      <div class="wrapper">
+        <h3>Location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.0228619079257!2d106.7794275149667!3d-6.260718695468413!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1a8713ce207%3A0x2c3ea1f4a28bfac5!2sHacktiv8+Indonesia!5e0!3m2!1sen!2sid!4v1532678718559" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="wrapper">
+        <form action="#" method="GET">
+          <h3>Hubungi Kami</h3>
+          <label class="blocking">email anda</label>
+          <input type="text" name="inputEmail" placeholder="email anda" style="width: 350px; padding: 10px; font-size: 14px"/>
+          <label class="blocking">Pesan</label>
+          <textarea name="inputPesan" style="width: 350px; height: 55px; padding: 10px; font-size: 14px"></textarea>
+          <input  class="blocking" type="submit" value="kirim pesan">
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html>

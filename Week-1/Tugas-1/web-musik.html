@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Musik Web Portal Indonesia</title>
+    <link rel="icon" href="">
+    <style>
+        body {
+            margin: 0px;
+            }
+        
+        #header {
+            background: #118822;
+            width: 1364px;
+            height: 109px;
+            margin: 0px;
+            position: fixed;
+            }
+        
+        #header ul{
+            display: inline;
+            margin: 0px;
+            padding: 0px;
+            position: absolute;
+            }
+            
+        #header ul li{
+            display: inline-block;
+            }
+        
+        .wrapper {
+            position: relative; 
+            max-width: 1220px; 
+            padding: 10px 0px 10px 0px; 
+            margin: 0 auto;
+            }
+            
+        #titleVideo, .centerVertically {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            }
+        
+        #login {
+            position: absolute;
+            right: 100px;
+            font-size: 20px;
+            width: 80px;
+            height: 40px;
+            }
+        
+        #daftar {
+            position: absolute;
+            right: 0px;
+            font-size: 20px;
+            width: 80px;
+            height: 40px;
+            }
+
+        .imggenre {
+            padding: 5px 0px 0px 0px; 
+            }
+        
+        #imgcolumn {
+            margin: 109px 0px 0px 0px;
+        }
+            
+        .imgnews {
+            height: 300px; width: 400px;
+            }
+        
+        form{
+            padding: 15px 0px;
+            }
+        
+        .blocking{
+            display: block;
+            padding: 15px 0px;
+            }
+
+        .left {
+            width:48%;
+            height:100px;
+            float:left;
+            }
+        
+        .right {
+            width:48%;
+            height:100px;
+            float:right;
+            }
+        
+        #information {
+            font-size: 25px;
+            padding: 30px 0px 0px 30px;
+        }
+
+    </style>
+  </head>
+  <body>
+      <div id="header">
+          <div class="wrapper">
+              <img src="file/music logo.jpg" alt="music logo" title="Musik Web Portal Indonesia" style="height: 80px"/>
+              <ul class="centerVertically">
+                  <li><h1>Musik Web Portal Indonesia</h1></li>
+                  <li>Home</li>
+                  <li>Genre</li>
+                  <li>List</li>
+                  <li>News</li>
+                  <li>Song</li>
+                  <li>Video</li>
+                </ul>
+                <button id="login" class="centerVertically">login</button>
+                <button id="daftar" class="centerVertically">daftar</button>
+            </div>
+      </div>
+      <div class="imggenre">
+          <center id:"imgcolumn">
+              <img class="imgnews" src="file/marshmello.jpg"/>
+              <img class="imgnews" src="file/Metallica.png"/>
+              <img class="imgnews" src="file/ed sheeran.jpg" />
+          </center>
+        </div>
+        <div class="imggenre">
+            <center>
+                <img class="imgnews" src="file/andrea bocelli.jpg" />
+                <img class="imgnews" src="file/john mclaughlin.jpg" />
+                <img class="imgnews" src="file/guns-n-roses.jpg" />
+            </center>
+    </div>  
+    <div>
+        <ul class="left">
+            <li id="information">Home</li>
+            <li id="information">About</li>
+            <li id="information">Location</li>
+            <li id="information">Partner</li>
+        </ul>
+    </div>
+    <div id="contact">
+            <div class="right">
+              <form action="#" method="GET">
+                <h3>Hubungi Kami</h3>
+                <label class="blocking">email anda</label>
+                <input type="text" name="inputEmail" placeholder="email anda" style="width: 350px; padding: 10px; font-size: 14px"/>
+                <label class="blocking">Pesan</label>
+                <textarea name="inputPesan" style="width: 350px; height: 55px; padding: 10px; font-size: 14px"></textarea>
+                <input  class="blocking" type="submit" value="kirim pesan">
+              </form>
+            </div>
+    </div>    
+  </body>
+</html>

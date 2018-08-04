@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+        .containerRadio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.checkmarkRadio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+        </style>
+    </head>
+    <body>
+    <h1>Buat Account Baru</h1>
+    <h3>Sign Up Form</h3>
+    <p>First name:</p>
+    <input type="text" name="inputFirstName" placeholder="first name" style="width: 350px; padding: 10px; font-size: 14px border= 0px;"/>
+    <p>Last name:</p>
+    <input type="text" name="inputLastName" placeholder="first name" style="width: 350px; padding: 10px; font-size: 14px border= 0px;"/>
+    <p>Gender</p>
+    <label class="containerRadio">One
+        <input type="checkbox" checked="checked">
+        <span class="checkmarkRadio"></span>
+    </label>
+    <label class="containerRadio">Two
+        <input type="checkbox">
+        <span class="checkmarkRadio"></span>
+    </label>
+    <label class="containerRadio">Three
+        <input type="checkbox">
+        <span class="checkmarkRadio" style:"checkmark"></span>
+    </label>
+    <p>Nationality:</p>
+    <div class="custom-select" style="width:200px;">
+            <select>
+              <option value="0">America</option>
+              <option value="1">Brazil</option>
+              <option value="2">Croatia</option>
+              <option value="3">Indonesia</option>
+              <option value="4">Malaysia</option>
+              <option value="5">Singapore</option>
+              <option value="6">Thailand</option>
+            </select>
+        </div>
+        <p>Language Spoken:</p>
+        <label>Bahasa Indonesia
+        <input type="checkbox" style:"checkmark">
+        </label>
+        <label>English
+        <input type="checkbox" style:"checkmark">
+        </label>
+        <label>Other
+        <input type="checkbox" style:"checkmark">
+        </label>   
+</body>
+</html>
