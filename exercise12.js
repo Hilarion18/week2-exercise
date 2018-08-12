@@ -8,7 +8,7 @@ Code
 function konversiMenit(menit) {
   var jam = 0;
   var sisaMenit = 0;
-  jam = Math.round(menit/60)
+  jam = Math.floor(menit/60)
   sisaMenit = (menit % 60)
   if(sisaMenit < 10)
   {
