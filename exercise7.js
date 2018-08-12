@@ -54,14 +54,21 @@ jika rows2 = 5
 *****
 */
 
-function angka(input){
-    var deret;
-    for (var a = 0; a < input; a++){
-        deret = '******'
-        console.log(deret)
+function row(input){
+    var temp = '';
+    for ( var i = 0; i < input; i++){
+        for ( var j = 0; j < input; j++){
+            if (j === 0 || j / j === 1 || i === 0|| i / i === 1){
+                temp = temp + '*';
+            } else { 
+                temp = temp + ' ';
+            }
         }
-    } 
-angka(5)
+        temp = temp + '\n'
+    }
+    console.log(temp)
+}
+row(5)
 
 /*
 3. Menyusun Barisan Tangga Bintang Dengan Nested Looping
